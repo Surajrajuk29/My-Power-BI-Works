@@ -1,76 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Raju - Data Engineering Portfolio</title>
+    <title>Power BI Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            padding: 20px;
-        }
-        .dashboard {
-            margin-bottom: 20px;
-            border: 2px solid #ddd;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        iframe {
+
+        #powerbi-container {
             width: 100%;
-            height: 500px;
-            border: none;
-        }
-        /* Responsive design for small screens */
-        @media (max-width: 768px) {
-            iframe {
-                height: 300px;
-            }
+            height: 100%;
+            position: relative;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Data Engineering Portfolio</h1>
-    </header>
-
-    <div class="container">
-        <div class="dashboard">
-            <h2>Dashboard 1: Admin Forms</h2>
-            <!-- Embed Admin Forms Dashboard from GitHub Pages or another platform -->
-            <iframe src="https://yourusername.github.io/repository-name/Admin%20Forms%20Dashboard.html" title="Admin Forms Dashboard"></iframe>
-        </div>
-
-        <div class="dashboard">
-            <h2>Dashboard 2: Sales Analysis</h2>
-            <!-- Embed another dashboard -->
-            <iframe src="https://yourusername.github.io/repository-name/Sales%20Analysis%20Dashboard.html" title="Sales Dashboard"></iframe>
-        </div>
-
-        <div class="dashboard">
-            <h2>Dashboard 3: Marketing Insights</h2>
-            <!-- Embed another dashboard -->
-            <iframe src="https://yourusername.github.io/repository-name/Marketing%20Insights%20Dashboard.html" title="Marketing Dashboard"></iframe>
-        </div>
-
-        <!-- Add more dashboards as needed -->
+    <div id="powerbi-container">
+        <iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiMWFjYTNlNTEtNTAyOS00MGM1LTk3NDQtZjVhNDM4Y2NjZTYxIiwidCI6IjVlZDU3N2NhLWExYjgtNDhiMi05NDg0LWEyMmNhN2ZlMThlMiJ9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
 
-    <footer style="text-align:center; padding: 20px; background-color: #333; color: white;">
-        <p>Thank you for visiting my portfolio!</p>
-    </footer>
+    <!-- Optional: You can use Power BI JavaScript API for more custom interactions -->
+    <!-- <script src="https://cdn.powerbi.com/libs/powerbi-client/2.19.1/powerbi.min.js"></script> -->
 </body>
 </html>
